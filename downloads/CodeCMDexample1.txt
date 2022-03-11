@@ -1,0 +1,375 @@
+library(fda)
+#########Functions from Dr. Lei##############
+GenParameter <- function(a, b.beta, K = 100, p = 1, b.scale = 1) {
+  s <- rep(0,K)
+  s[1] <- 1
+  b.origin <- rep(0,K)
+  b.origin[1] <- 0.3
+  for (j in 2:K) {
+    b.origin[j] <- 4 * (-1)^j / j^b.beta # beta is about b.beta - 1/2
+    s[j] <- j^(-a/2)                     # alpha is about a
+  }
+  b.origin <- b.origin * rbinom(K, 1, p) * b.scale
+  b.origin <- b.origin / sqrt(sum(b.origin^2))
+  return(list(s = s, b.origin = b.origin))
+}
+
+#
+GenData <- function(X.mat, r, b.origin, phi, s) {
+  b.func <- matrix(b.origin, nrow = 1) %*% phi * r
+#  b <- b.origin * r
+
+  n <- dim(X.mat)[1]
+#  X.mat <- matrix(rnorm(n*K), n, K) %*% diag(s)
+  X.func <- X.mat %*% phi
+  Z <- matrix(rnorm(n), nrow = n)
+  Y <- X.func %*% t(b.func) / M + Z
+  return(list(X.func = X.func, Y = Y))  
+}
+
+Lei<-function(Y,X,MAX=NULL){
+X.fd<-center.fd(X)
+Y<-Y-mean(Y)
+objbasis<-X.fd$basis
+coeff<-X.fd$coefs
+n = dim(coeff)[2]
+b = dim(coeff)[1]
+#m0=floor(log(n, base = exp(1)))
+m0=1
+if (is.null(MAX)==1) { #MAX=ceiling(log2(n^(1/3)/m0))
+MAX=ceiling(log2(n^(1/3)))
+}
+pcaobj_X<-pca.fd(X.fd, nharm = b, harmfdPar=fdPar(X.fd),centerfns = TRUE)
+cross_coeff<-rep(0,b) #b *1 matrix
+for (nn in 1:n){
+	cross_coeff=cross_coeff+(1/n*Y[nn]*fd(X.fd$coefs[,nn], objbasis))$coefs
+}
+
+mn=floor(sqrt(n))
+sigma2=summary(lm(Y~pcaobj_X$scores[,1:mn]-1))$sigma^2
+#sigma2=1/n*sum(lm(Y~pcaobj_X$scores[,1:mn])$residuals^2)
+theta_hat<-rep(0,m0*2^(MAX))
+for ( j in 1:as.numeric(m0*2^(MAX))){
+	theta_hat[j]=1/(pcaobj_X$values[j])*inprod(fd(cross_coeff, objbasis),pcaobj_X$harmonics[j])
+}
+
+snm<-rep(0,MAX)
+psi<-rep(0,3)
+for (k in 1:MAX){
+	m=m0*2^(k)
+	snm[k]=n/sigma2*sum(pcaobj_X$values[1:m]*(theta_hat[1:m])^2)
+	#Tnm[k]=1/(sqrt(2*m))*(snm-m)
+          if (snm[k] >= qchisq(0.1 / (MAX), df = m, lower.tail = FALSE)) {psi[1] <- 1}
+	 if (snm[k] >= qchisq(0.05 / (MAX), df = m, lower.tail = FALSE)) {psi[2] <- 1}
+	 if (snm[k] >= qchisq(0.01 / MAX, df = m, lower.tail = FALSE)) {psi[3] <- 1}
+
+
+}
+Lei<- list(T=snm, m0=m0, MAX=MAX, psi=psi)
+
+}
+
+###########################################
+
+u.center <- function(x, type=1){
+  if (type==1){
+  if (is.matrix(x)) {n=dim(x)[1]
+  if (isSymmetric(x)) A=x else A=as.matrix(dist(x))} else {n=length(x); A=as.matrix(dist(x))}
+  R=rowSums(A)
+  C=colSums(A)
+  T=sum(A)
+  r=matrix(rep(R,n),n,n)/(n-2)
+  c=t(matrix(rep(C,n),n,n))/(n-2)
+  t=matrix(T/(n-1)/(n-2),n,n)
+  UA=A-r-c+t
+  diag(UA)=0} else{ 
+  if (is.matrix(x)) {n=dim(x)[1]
+  if (isSymmetric(x)) A=x else A=as.matrix(dist(x))^2} else {n=length(x); A=as.matrix(dist(x))^2}
+  R=rowSums(A)
+  C=colSums(A)
+  T=sum(A)
+  r=matrix(rep(R,n),n,n)/(n-2)
+  c=t(matrix(rep(C,n),n,n))/(n-2)
+  t=matrix(T/(n-1)/(n-2),n,n)
+  UA=A-r-c+t
+  diag(UA)=0}
+  return(UA)
+}
+
+##Input: functional curve x
+##type=1 |x_i-x_j|, type=2 |x_i-x_j|^2
+##Output: u centered matrix A=(A_{i,j}), A_{i,j}= either |x_i-x_j| or |x_i-x_j|^2
+u.center.fd <- function(x, type){
+  if (is.fd(x)) {n=dim(x$coefs)[2]}
+  objbasis<-x$basis
+  A<-matrix(0, n, n) 
+  if (type==2){         
+  for (i in 1:(n-1)){
+    for (j in (i+1):n){
+      A[i,j]<-inprod(fd(x$coefs[,i]-x$coefs[,j],objbasis), fd(x$coefs[,i]-x$coefs[,j],objbasis))
+	A[j,i]<-A[i,j]
+    }	
+  }         
+  R=rowSums(A)
+  C=colSums(A)
+  T=sum(A)
+  r=matrix(rep(R,n),n,n)/(n-2)
+  c=t(matrix(rep(C,n),n,n))/(n-2)
+  t=matrix(T/(n-1)/(n-2),n,n)
+  UA=A-r-c+t
+  diag(UA)=0
+}
+
+ if (type==1){
+ for (i in 1:(n-1)){
+    for (j in (i+1):n){
+      A[i,j]<-sqrt(inprod(fd(x$coefs[,i]-x$coefs[,j],objbasis), fd(x$coefs[,i]-x$coefs[,j],objbasis)))
+	A[j,i]<-A[i,j]
+    }	
+  }         
+  R=rowSums(A)
+  C=colSums(A)
+  T=sum(A)
+  r=matrix(rep(R,n),n,n)/(n-2)
+  c=t(matrix(rep(C,n),n,n))/(n-2)
+  t=matrix(T/(n-1)/(n-2),n,n)
+  UA=A-r-c+t
+  diag(UA)=0
+}
+ return(UA)
+}
+
+
+inner <- function(x,y){
+  n=dim(x)[1]
+  ip=sum(x*y)/n/(n-3) 
+  return(ip)
+}
+
+###Used in FMDD_wildboot###
+###Multiplying the external variables (Mammen 1993) inside the summation of FMDD_n.
+inner_wild <- function(x,y){
+  n=dim(x)[1]
+  #w=rnorm(n,0,1)
+  temp<-c(-(sqrt(5)-1)/2, (sqrt(5)+1)/2)
+  prob<-c((sqrt(5)+1)/(2*sqrt(5)),1-(sqrt(5)+1)/(2*sqrt(5)))
+  w=sample(temp, n, replace = TRUE, prob =prob)
+  ip=sum(x*y*(w%*%t(w)))/n/(n-3) 
+  return(ip)
+}
+
+##Input: Y: either functional data or univariate, X: either univariate, multivariate or functional data, 
+##type=1: Y is a functional data, X is univariate or multivariate, type=2: Y is a functional data, X is a functional data
+##type=3: Y is univariate, X is a functional data 
+##Output: nFMDD: n*FMDD, UY: n*n matrix where (i,j) is 1/2|Y_i-Y_j|^2, UX: n*n matrix where (i,j) is |X_i-X_j|
+FMDD<-function (Y, X, type)
+{
+if (type==1){
+objbasis<-Y$basis
+Y.fd<-center.fd(Y) #center.fd
+coeff<-Y.fd$coefs
+n = dim(coeff)[2]
+Ay=0.5*u.center.fd(Y.fd, type=2)
+Ax=u.center(X)
+nFMDD=n*inner(Ax,Ay)
+} 
+if (type==2){ 
+objbasis<-Y$basis
+Y.fd<-center.fd(Y) #center.fd
+coeff<-Y.fd$coefs
+n = dim(coeff)[2]
+Ay=0.5*u.center.fd(Y.fd, type=2)
+Ax=u.center.fd(X, type=1)
+nFMDD=n*inner(Ax,Ay)
+} else{
+objbasis<-X$basis
+X.fd<-center.fd(X) #center.fd
+coeff<-X.fd$coefs
+n = dim(coeff)[2]
+Ay=0.5*u.center(Y, type=2)
+Ax=u.center.fd(X, type=1)
+nFMDD=n*inner(Ax,Ay)
+}
+
+FMDD <- list(nFMDD=nFMDD, UcenteredX=Ax, UcenteredY=Ay)
+}
+
+##Input: AY, AX: u.centered matrix
+##Output: bootstrap test statistic
+FMDD_wildboot<-function (AY, AX)
+{
+Ax<-AX
+Ay<-AY
+n<-dim(Ax)[1]
+nFMDD=n*inner_wild(Ax,Ay)
+FMDD_wildboot <- return(nFMDD)
+}
+
+
+##########################################################################################3
+N<-100
+r1=sqrt(0.1) # signal strength
+r2=sqrt(0.2)
+r3=sqrt(0.5)
+r0=0
+
+M <- 100 # number of grid points
+t <- seq(1/(2*M), 1/(2*M) + (M - 1) / M, by = 1/M)
+K <- 100 # number of PC's
+
+# parameters
+phi <- matrix(0, K, M)
+phi[1, ] <- rep(1, M)
+for (j in 2:K) {
+  phi[j, ] <- sqrt(2) * cos((j-1) * pi * t)
+}
+
+b.origin <- rep(0, K)
+s <- rep(0, K)
+
+s[1] <- 1
+b.origin[1] <- 0.3
+for (j in 2:K) {
+  b.origin[j] <- 4 * (-1)^j / j^2 # beta is about 1.5
+  s[j] <- j^(-1.1/2)           # alpha is about 1.1
+}
+b.origin <- b.origin / sqrt(sum(b.origin^2))
+
+
+result_Lei0<-result_Lei1<-result_Lei2<-result_Lei3<-matrix(0,1000,3)
+Test_FMDD0<-Test_FMDD1<-Test_FMDD2<-Test_FMDD3<-matrix(0,1000,3)
+for (k in 1:1000){
+set.seed(200+k)
+para.gen <- GenParameter(a = 1.1, b.beta = 2, K = 100) # random Z 
+s <- para.gen$s	#theoretical eigenvalues
+b.origin <- para.gen$b.origin
+
+set.seed(100+k)
+X.mat <- matrix(rnorm(N*K), N, K) %*% diag(s)
+sim.data <- GenData(X.mat = X.mat, r = r1, b.origin = b.origin, phi = phi, s = s)
+basis<-create.fourier.basis(rangeval=c(0,1),nbasis=21)
+X.fd = smooth.basis(t, t(sim.data$X.func), basis)$fd
+
+result_Lei1[k,]<-Lei(sim.data$Y,X.fd)$psi
+
+result_FMDD<-FMDD(sim.data$Y,X.fd,type=3)
+B<-499 # bootstrap sample
+boot<-c()
+for (i in 1:B){
+boot[i]<-FMDD_wildboot(result_FMDD$UcenteredY,result_FMDD$UcenteredX)
+print(i)
+}
+
+
+crit.n<-c(quantile(boot,0.9),quantile(boot,0.95), quantile(boot,0.99))
+Test_FMDD1[k,]<-c(as.numeric(result_FMDD$nFMDD>crit.n[1]),as.numeric(result_FMDD$nFMDD>crit.n[2]),as.numeric(result_FMDD$nFMDD>crit.n[3]))
+#pvalue.FMDD=sum(boot>result_FMDD$nFMDD)/B
+
+set.seed(100+k)
+X.mat <- matrix(rnorm(N*K), N, K) %*% diag(s)
+sim.data <- GenData(X.mat = X.mat, r = r2, b.origin = b.origin, phi = phi, s = s)
+basis<-create.fourier.basis(rangeval=c(0,1),nbasis=21)
+X.fd = smooth.basis(t, t(sim.data$X.func), basis)$fd
+result_Lei2[k,]<-Lei(sim.data$Y,X.fd)$psi
+
+result_FMDD<-FMDD(sim.data$Y,X.fd,type=3)
+B<-499 # bootstrap sample
+boot<-c()
+for (i in 1:B){
+boot[i]<-FMDD_wildboot(result_FMDD$UcenteredY,result_FMDD$UcenteredX)
+print(i)
+}
+
+
+crit.n<-c(quantile(boot,0.9),quantile(boot,0.95), quantile(boot,0.99))
+Test_FMDD2[k,]<-c(as.numeric(result_FMDD$nFMDD>crit.n[1]),as.numeric(result_FMDD$nFMDD>crit.n[2]),as.numeric(result_FMDD$nFMDD>crit.n[3]))
+#pvalue.FMDD=sum(boot>result_FMDD$nFMDD)/B
+
+set.seed(100+k)
+X.mat <- matrix(rnorm(N*K), N, K) %*% diag(s)
+sim.data <- GenData(X.mat = X.mat, r = r3, b.origin = b.origin, phi = phi, s = s)
+basis<-create.fourier.basis(rangeval=c(0,1),nbasis=21)
+X.fd = smooth.basis(t, t(sim.data$X.func), basis)$fd
+result_Lei3[k,]<-Lei(sim.data$Y,X.fd)$psi
+
+result_FMDD<-FMDD(sim.data$Y,X.fd,type=3)
+B<-499 # bootstrap sample
+boot<-c()
+for (i in 1:B){
+boot[i]<-FMDD_wildboot(result_FMDD$UcenteredY,result_FMDD$UcenteredX)
+print(i)
+}
+
+
+crit.n<-c(quantile(boot,0.9),quantile(boot,0.95), quantile(boot,0.99))
+Test_FMDD3[k,]<-c(as.numeric(result_FMDD$nFMDD>crit.n[1]),as.numeric(result_FMDD$nFMDD>crit.n[2]),as.numeric(result_FMDD$nFMDD>crit.n[3]))
+#pvalue.FMDD=sum(boot>result_FMDD$nFMDD)/B
+
+
+set.seed(100+k)
+X.mat <- matrix(rnorm(N*K), N, K) %*% diag(s)
+sim.data <- GenData(X.mat = X.mat, r = r0, b.origin = b.origin, phi = phi, s = s)
+basis<-create.fourier.basis(rangeval=c(0,1),nbasis=21)
+X.fd = smooth.basis(t, t(sim.data$X.func), basis)$fd
+result_Lei0[k,]<-Lei(sim.data$Y,X.fd)$psi
+
+result_FMDD<-FMDD(sim.data$Y,X.fd,type=3)
+B<-499 # bootstrap sample
+boot<-c()
+for (i in 1:B){
+boot[i]<-FMDD_wildboot(result_FMDD$UcenteredY,result_FMDD$UcenteredX)
+print(i)
+}
+
+
+crit.n<-c(quantile(boot,0.9),quantile(boot,0.95), quantile(boot,0.99))
+Test_FMDD0[k,]<-c(as.numeric(result_FMDD$nFMDD>crit.n[1]),as.numeric(result_FMDD$nFMDD>crit.n[2]),as.numeric(result_FMDD$nFMDD>crit.n[3]))
+#pvalue.FMDD=sum(boot>result_FMDD$nFMDD)/B
+
+print(k)
+}
+
+
+################N=100#####################################
+apply(Test_FMDD0,2,mean)
+############
+> apply(Test_FMDD0,2,mean)
+[1] 0.109 0.063 0.014
+############
+apply(Test_FMDD1,2,mean)
+#############
+> apply(Test_FMDD1,2,mean)
+[1] 0.432 0.301 0.116
+#############
+apply(Test_FMDD2,2,mean)
+############
+> apply(Test_FMDD2,2,mean)
+[1] 0.698 0.569 0.304
+############
+apply(Test_FMDD3,2,mean)
+#############
+> apply(Test_FMDD3,2,mean)
+[1] 0.953 0.914 0.762
+#############
+
+apply(result_Lei0,2,mean)
+############
+> apply(result_Lei0,2,mean)
+[1] 0.088 0.060 0.014
+#############
+apply(result_Lei1,2,mean)
+#############
+> apply(result_Lei1,2,mean)
+[1] 0.438 0.323 0.161
+##############
+apply(result_Lei2,2,mean)
+##############
+> apply(result_Lei2,2,mean)
+[1] 0.708 0.618 0.413
+###############
+apply(result_Lei3,2,mean)
+###############
+> apply(result_Lei3,2,mean)
+[1] 0.971 0.942 0.878
+###############
+
