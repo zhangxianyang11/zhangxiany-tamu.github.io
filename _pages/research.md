@@ -518,5 +518,4 @@ permalink: /research
         </div>
       </div>
     </article>
-  </div>
-</div>
+
