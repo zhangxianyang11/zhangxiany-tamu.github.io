@@ -227,7 +227,7 @@ permalink: /research
           <em>Testing conditional mean independence for functional data</em>.
           Biometrika 107 (2), 331-346,
           2020.
-          <a class="tag" href="https://doi.org/10.1093/biomet/asz070">link</a> <a class="tag" href="/downloads/FMDD-supp.pdf">supplement file</a> <a class="tag" href="/downloads/CodeCMDexample1.txt">R code/a>
+          <a class="tag" href="https://doi.org/10.1093/biomet/asz070">link</a> <a class="tag" href="/downloads/FMDD-supp.pdf">supplement file</a> <a class="tag" href="/downloads/CodeCMDexample1.txt">R code</a>
           </p>
         </div>
       </div>
