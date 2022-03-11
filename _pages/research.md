@@ -43,7 +43,7 @@ permalink: /research
           <p>
           <b>X Zhang</b>, J Chen.
           <em>Covariate adaptive false discovery rate control with applications to omics-wide multiple testing</em>.
-          Journal of the American Statistical Association, 1-17,
+          Journal of the American Statistical Association,
           2022.
           <a class="tag" href="https://doi.org/10.1080/01621459.2020.1783273">link</a> <a class="tag" href="https://github.com/jchen1981/CAMT">R: CAMT</a>
           </p>
@@ -56,7 +56,7 @@ permalink: /research
           <p>
           S Yun, <b>X Zhang</b>, B Li.
           <em>Detection of local differences in spatial characteristics between two spatiotemporal random fields</em>.
-          Journal of the American Statistical Association, 1-16,
+          Journal of the American Statistical Association,
           2022.
           <a class="tag" href="https://doi.org/10.1080/01621459.2020.1775613">link</a>
           </p>
