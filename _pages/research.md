@@ -12,7 +12,7 @@ permalink: /research
         <div class="content">
           <h1>Research Interests</h1>
           <p>
-            The primary objective of my research is to develop new statistical theories and methodologies for large-scale and high-dimensional data with complex structures. My research has focused on high dimensional/large-scale statistical inference, kernel and distance-based methods, genomics and microbiome data analysis, functional data analysis, time series, and econometrics. My current research is supported in part by NIH 1R01GM144351-01, NIH 1R21 HG011662, NSF DMS-2113359, and local grants from Texas A&M.
+            The primary objective of my research is to develop new statistical theories and methodologies for large-scale and high-dimensional data with complex structures. My research has focused on high dimensional/large-scale statistical inference, kernel and distance-based methods, genomics and microbiome data analysis, functional data analysis, time series, and econometrics. My research is currently supported by NIH 1R01GM144351-01, NIH 1R21 HG011662, NSF DMS-2113359, and local grants from Texas A&M.
           </p>
         </div>
       </div>
