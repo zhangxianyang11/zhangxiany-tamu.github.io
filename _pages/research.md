@@ -24,6 +24,19 @@ permalink: /research
         </div>
       </div>
     </article>
+        <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <p>
+          H Zhou, K He, J Chen, <b>X Zhang</b>.
+          <em>LinDA: Linear Models for Differential Abundance Analysis of Microbiome Compositional Data</em>.
+          Genome biology,
+          2022.
+          <a class="tag" href="https://arxiv.org/abs/2104.00242">arXiv:2104.00242</a> <a class="tag" href="https://cran.r-project.org/web/packages/MicrobiomeStat/index.html">CRAN: MicrobiomeStat</a>
+          </p>
+        </div>
+      </div>
+    </article>
     <article class="media">
       <div class="media-content">
         <div class="content">
@@ -85,19 +98,6 @@ permalink: /research
           arXiv,
           2021.
           <a class="tag" href="https://arxiv.org/abs/2105.08976">arXiv:2105.08976</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
-          H Zhou, K He, J Chen, <b>X Zhang</b>.
-          <em>LinDA: Linear Models for Differential Abundance Analysis of Microbiome Compositional Data</em>.
-          Genome biology,
-          2022.
-          <a class="tag" href="https://arxiv.org/abs/2104.00242">arXiv:2104.00242</a> <a class="tag" href="https://cran.r-project.org/web/packages/MicrobiomeStat/index.html">CRAN: MicrobiomeStat</a>
           </p>
         </div>
       </div>
