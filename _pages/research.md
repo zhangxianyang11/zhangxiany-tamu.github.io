@@ -71,7 +71,7 @@ permalink: /research
           <em>D-MANOVA: fast distance-based multivariate analysis of variance for large-scale microbiome association studies</em>.
           Bioinformatics 38 (1), 286-288,
           2022.
-          <a class="tag" href="https://doi.org/10.1093/bioinformatics/btab498">link</a> <a class="tag" href="/downloads/D-MANOVA.pdf">file</a> <a class="tag" href="https://cran.r-project.org/web/packages/GUniFrac/index.html">CRAN: GUniFrac</a>
+          <a class="tag" href="https://doi.org/10.1093/bioinformatics/btab498">link</a> <a class="tag" href="https://cran.r-project.org/web/packages/GUniFrac/index.html">CRAN: GUniFrac</a>
           </p>
         </div>
       </div>
