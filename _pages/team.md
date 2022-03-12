@@ -21,7 +21,7 @@ permalink: /team
     <article class="media">
       <div class="media-content">
         <div class="content">
-          <h1>Current students</h1>
+          <h1>Current PhD students</h1>
           <p><ul>
             <li><a  href="https://xingchi.li">Xingchi Li</a></li>
             <li>Hanxuan Ye</li>
