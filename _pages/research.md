@@ -32,7 +32,7 @@ permalink: /research
           <em>LinDA: Linear Models for Differential Abundance Analysis of Microbiome Compositional Data</em>.
           Genome biology,
           2022.
-          <a class="tag" href="https://arxiv.org/abs/2104.00242">arXiv:2104.00242</a> <a class="tag" href="https://cran.r-project.org/web/packages/MicrobiomeStat/index.html">CRAN: MicrobiomeStat</a>
+          <a class="tag" href="https://arxiv.org/abs/2104.00242">link</a> <a class="tag" href="https://cran.r-project.org/web/packages/MicrobiomeStat/index.html">CRAN: MicrobiomeStat</a>
           </p>
         </div>
       </div>
@@ -82,9 +82,9 @@ permalink: /research
           <p>
           S Yi, <b>X Zhang</b>.
           <em>Projection-based Inference for High-dimensional Linear Models</em>.
-          Statistica Sinica,
+          Statistica Sinica, 32, 1-23,
           2022.
-          <a class="tag" href="/downloads/BRP.pdf">file</a>
+          <a class="tag" href="/downloads/BRP.pdf">link</a>
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ permalink: /research
           <em>Kernel Two-Sample Tests in High Dimension: Interplay Between Moment Discrepancy and Dimension-and-Sample Orders</em>.
           arXiv,
           2021.
-          <a class="tag" href="https://arxiv.org/abs/2201.00073">arXiv:2201.00073</a>
+          <a class="tag" href="https://arxiv.org/abs/2201.00073">link</a>
           </p>
         </div>
       </div>
@@ -123,7 +123,7 @@ permalink: /research
           <em>High-dimensional Change-point Detection Using Generalized Homogeneity Metrics</em>.
           arXiv,
           2021.
-          <a class="tag" href="https://arxiv.org/abs/2105.08976">arXiv:2105.08976</a>
+          <a class="tag" href="https://arxiv.org/abs/2105.08976">link</a>
           </p>
         </div>
       </div>
@@ -136,7 +136,7 @@ permalink: /research
           <em>Optimal false discovery rate control for large scale multiple testing with auxiliary information</em>.
           Annals of Statistics,
           2021.
-          <a class="tag" href="https://arxiv.org/abs/2103.15311">arXiv:2103.15311</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
+          <a class="tag" href="https://arxiv.org/abs/2103.15311">link</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
           </p>
         </div>
       </div>
@@ -147,9 +147,9 @@ permalink: /research
           <p>
           S Chakraborty, <b>X Zhang</b>.
           <em>A new framework for distance and kernel-based metrics in high dimensions</em>.
-          Electronic Journal of Statistics,
+          Electronic Journal of Statistics, 15, 5455-5522,
           2021.
-          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/A-new-framework-for-distance-and-kernel-based-metrics-in/10.1214/21-EJS1889.full">DOI: 10.1214/21-EJS1889</a> <a class="tag" href="/downloads/HM-2021.pdf">file</a> <a class="tag" href="/downloads/HM-slides.pdf">slides</a>
+          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/A-new-framework-for-distance-and-kernel-based-metrics-in/10.1214/21-EJS1889.full">link</a> <a class="tag" href="/downloads/HM-2021.pdf">file</a> <a class="tag" href="/downloads/HM-slides.pdf">slides</a>
           </p>
         </div>
       </div>
@@ -160,7 +160,7 @@ permalink: /research
           <p>
           S Kong, Z Yu, <b>X Zhang</b>, G Cheng.
           <em>High Dimensional Robust Inference for Cox Regression Models using De‐sparsified Lasso</em>.
-          Scandinavian Journal of Statistics,
+          Scandinavian Journal of Statistics, 48, 1068-1095,
           2021.
           <a class="tag" href="https://doi.org/10.1111/sjos.12543">link</a>
           </p>
@@ -188,7 +188,7 @@ permalink: /research
           <em>Distance-based and RKHS-based dependence metrics in high dimension</em>.
           The Annals of Statistics 48 (6), 3366-3394,
           2020.
-          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-48/issue-6/Distance-based-and-RKHS-based-dependence-metrics-in-high-dimension/10.1214/19-AOS1934.short">DOI: 10.1214/19-AOS1934</a> <a class="tag" href="/downloads/distance-2019.pdf">file</a>
+          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-48/issue-6/Distance-based-and-RKHS-based-dependence-metrics-in-high-dimension/10.1214/19-AOS1934.short">link</a> <a class="tag" href="/downloads/distance-2019.pdf">file</a>
           </p>
         </div>
       </div>
@@ -199,7 +199,7 @@ permalink: /research
           <p>
           H Zhou, <b>X Zhang</b>, J Chen.
           <em>Covariate Adaptive Family-wise Error Rate Control for Genome-Wide Association Studies</em>.
-          Biometrika,
+          Biometrika, 108, 915–931,
           2020.
           <a class="tag" href="https://doi.org/10.1093/biomet/asaa098">link</a> <a class="tag" href="https://github.com/jchen1981/CAMT/">R: CAMT</a>
           </p>
@@ -214,7 +214,7 @@ permalink: /research
           <em>Structure Adaptive Lasso</em>.
           arXiv,
           2020.
-          <a class="tag" href="https://arxiv.org/abs/2006.02041">arXiv:2006.02041</a>
+          <a class="tag" href="https://arxiv.org/abs/2006.02041">link</a>
           </p>
         </div>
       </div>
@@ -318,7 +318,7 @@ permalink: /research
           <em>Conditional mean and quantile dependence testing in high dimension</em>.
           The Annals of Statistics 46 (1), 219-246,
           2018.
-          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-46/issue-1/Conditional-mean-and-quantile-dependence-testing-in-high-dimension/10.1214/17-AOS1548.full">DOI: 10.1214/17-AOS1548</a> <a class="tag" href="/downloads/MDD-AOS-Supp-Jan2017.pdf">supplement file</a>
+          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-46/issue-1/Conditional-mean-and-quantile-dependence-testing-in-high-dimension/10.1214/17-AOS1548.full">link</a> <a class="tag" href="/downloads/MDD-AOS-Supp-Jan2017.pdf">supplement file</a>
           </p>
         </div>
       </div>
@@ -344,7 +344,7 @@ permalink: /research
           <em>Empirical bayes, sure and sparse normal mean models</em>.
           arXiv,
           2017.
-          <a class="tag" href="https://arxiv.org/abs/1702.05195">arXiv:1702.05195</a> <a class="tag" href="/downloads/EB-2019.pdf">latest version</a>
+          <a class="tag" href="https://arxiv.org/abs/1702.05195">link</a> <a class="tag" href="/downloads/EB-2019.pdf">latest version</a>
           </p>
         </div>
       </div>
@@ -409,7 +409,7 @@ permalink: /research
           <em>Testing high dimensional mean under sparsity</em>.
           arXiv,
           2015.
-          <a class="tag" href="https://arxiv.org/abs/1509.08444">arXiv:1509.08444</a> <a class="tag" href="/downloads/LR-HD2017.pdf">file</a>
+          <a class="tag" href="https://arxiv.org/abs/1509.08444">link</a> <a class="tag" href="/downloads/LR-HD2017.pdf">file</a>
           </p>
         </div>
       </div>
@@ -422,7 +422,7 @@ permalink: /research
           <em>Two sample inference for the second-order property of temporally dependent functional data</em>.
           Bernoulli 21 (2), 909-929,
           2015.
-          <a class="tag" href="https://projecteuclid.org/journals/bernoulli/volume-21/issue-2/Two-sample-inference-for-the-second-order-property-of-temporally/10.3150/13-BEJ592.full">DOI: 10.3150/13-BEJ592</a>
+          <a class="tag" href="https://projecteuclid.org/journals/bernoulli/volume-21/issue-2/Two-sample-inference-for-the-second-order-property-of-temporally/10.3150/13-BEJ592.full">link</a>
           </p>
         </div>
       </div>
@@ -448,7 +448,7 @@ permalink: /research
           <em>Bootstrapping high dimensional time series</em>.
           arXiv,
           2014.
-          <a class="tag" href="https://arxiv.org/abs/1406.1037">arXiv:1406.1037</a>
+          <a class="tag" href="https://arxiv.org/abs/1406.1037">link</a>
           </p>
         </div>
       </div>
@@ -487,7 +487,7 @@ permalink: /research
           <em>Fixed-smoothing asymptotics for time series</em>.
           The Annals of Statistics 41 (3), 1329-1349,
           2013.
-          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-41/issue-3/Fixed-smoothing-asymptotics-for-time-series/10.1214/13-AOS1113.full">DOI: 10.1214/13-AOS1113</a>
+          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-41/issue-3/Fixed-smoothing-asymptotics-for-time-series/10.1214/13-AOS1113.full">link</a>
           </p>
         </div>
       </div>
@@ -500,7 +500,7 @@ permalink: /research
           <em>Testing the structural stability of temporally dependent functional observations and application to climate projections</em>.
           Electronic Journal of Statistics 5, 1765-1796,
           2011.
-          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-5/issue-none/Testing-the-structural-stability-of-temporally-dependent-functional-observations-and/10.1214/11-EJS655.full">DOI: 10.1214/11-EJS655</a>
+          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-5/issue-none/Testing-the-structural-stability-of-temporally-dependent-functional-observations-and/10.1214/11-EJS655.full">link</a>
           </p>
         </div>
       </div>
