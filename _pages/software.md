@@ -197,7 +197,17 @@ permalink: /software
                   ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
                 <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1783273?journalCode=uasa20"
-                  >Paper</a
+                  >Paper on FDR</a
+                >
+              </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-dark"
+                  ><i class="fa fa-book" aria-hidden="true"></i
+                ></span>
+                <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1783273?journalCode=uasa20"
+                  >Paper on FWER</a
                 >
               </div>
             </div>
