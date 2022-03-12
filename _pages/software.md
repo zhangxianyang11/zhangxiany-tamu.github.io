@@ -243,7 +243,7 @@ permalink: /software
             <strong>jdcov</strong> <span class="tag is-white">2019</span><br />
             jdov computes joint distance covariance (JdCov) among more than two
             random vectors of arbitrary dimensions (see Chakraborty and Zhang,
-            1)    and implements a bootstrap based test for joint independence
+            2019) and implements a bootstrap based test for joint independence
             among the random vectors based on JdCov.
           </p>
           <div class="field is-grouped is-grouped-multiline">
