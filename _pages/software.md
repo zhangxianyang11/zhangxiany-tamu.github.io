@@ -29,7 +29,7 @@ permalink: /software
             Compositional Data <span class="tag is-white">2022</span><br />
             A suite of methods for powerful and robust microbiome data analysis
             addressing zero-inflation, phylogenetic structure and compositional
-            effects (Zhou et al. (2021)). The methods can be applied to the
+            effects (Zhou et al., 2021). The methods can be applied to the
             analysis of other (high-dimensional) compositional data arising from
             sequencing experiments.
           </p>
@@ -104,7 +104,7 @@ permalink: /software
                   ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
                 <a class="tag" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02418-8"
-                  >Genome biology</a
+                  >Paper</a
                 >
               </div>
             </div>
@@ -140,6 +140,16 @@ permalink: /software
                 ></span>
                 <a class="tag" href="https://github.com/jchen1981/OrderShapeEM"
                   >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-dark"
+                  ><i class="fa fa-book" aria-hidden="true"></i
+                ></span>
+                <a class="tag" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02418-8"
+                  >Paper</a
                 >
               </div>
             </div>
