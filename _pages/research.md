@@ -149,7 +149,7 @@ permalink: /research
           <em>A new framework for distance and kernel-based metrics in high dimensions</em>.
           Electronic Journal of Statistics, 15, 5455-5522,
           2021.
-          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/A-new-framework-for-distance-and-kernel-based-metrics-in/10.1214/21-EJS1889.full">link</a> <a class="tag" href="/downloads/HM-2021.pdf">file</a> <a class="tag" href="/downloads/HM-slides.pdf">slides</a>
+          <a class="tag" href="https://projecteuclid.org/journals/electronic-journal-of-statistics/volume-15/issue-2/A-new-framework-for-distance-and-kernel-based-metrics-in/10.1214/21-EJS1889.full">link</a> <a class="tag" href="/downloads/HM-slides.pdf">slides</a>
           </p>
         </div>
       </div>
