@@ -64,7 +64,7 @@ permalink: /software
                   ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
                 <a class="tag" href="https://arxiv.org/abs/2104.00242"
-                  >arXiv:2104.00242</a
+                  >Paper</a
                 >
               </div>
             </div>
@@ -148,7 +148,7 @@ permalink: /software
                 <span class="tag is-dark"
                   ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
-                <a class="tag" href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-021-02418-8"
+                <a class="tag" href="https://arxiv.org/abs/2103.15311"
                   >Paper</a
                 >
               </div>
@@ -188,6 +188,16 @@ permalink: /software
                 ></span>
                 <a class="tag" href="https://github.com/jchen1981/CAMT"
                   >GitHub</a
+                >
+              </div>
+            </div>
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-dark"
+                  ><i class="fa fa-book" aria-hidden="true"></i
+                ></span>
+                <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1783273?journalCode=uasa20"
+                  >Paper</a
                 >
               </div>
             </div>
@@ -277,6 +287,16 @@ permalink: /software
                 >
               </div>
             </div>
+            <div class="control">
+              <div class="tags has-addons">
+                <span class="tag is-dark"
+                  ><i class="fa fa-code-fork" aria-hidden="true"></i
+                ></span>
+                <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2018.1513364?journalCode=uasa20"
+                  >Paper</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -294,7 +314,7 @@ permalink: /software
             <strong>SILM</strong>: Simultaneous Inference for Linear Models
             <span class="tag is-white">2019</span><br />
             Simultaneous inference procedures for high-dimensional linear models
-            as described by Zhang, X., and Cheng, G. (2017).
+            as described by Zhang and Cheng (2017).
           </p>
           <div class="field is-grouped is-grouped-multiline">
             <div class="control">
@@ -317,7 +337,7 @@ permalink: /software
                 <a
                   class="tag"
                   href="https://doi.org/10.1080/01621459.2016.1166114"
-                  >Journal of the American Statistical Association</a
+                  >Paper</a
                 >
               </div>
             </div>
