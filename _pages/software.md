@@ -300,7 +300,7 @@ permalink: /software
             <div class="control">
               <div class="tags has-addons">
                 <span class="tag is-dark"
-                  ><i class="fa fa-code-fork" aria-hidden="true"></i
+                  ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
                 <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2018.1513364?journalCode=uasa20"
                   >Paper</a
