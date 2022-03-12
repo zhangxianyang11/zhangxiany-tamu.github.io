@@ -206,7 +206,7 @@ permalink: /software
                 <span class="tag is-dark"
                   ><i class="fa fa-book" aria-hidden="true"></i
                 ></span>
-                <a class="tag" href="https://www.tandfonline.com/doi/abs/10.1080/01621459.2020.1783273?journalCode=uasa20"
+                <a class="tag" href="https://academic.oup.com/biomet/article-abstract/108/4/915/6007465?redirectedFrom=fulltext&login=false"
                   >Paper on FWER</a
                 >
               </div>
