@@ -188,7 +188,7 @@ permalink: /research
           <em>Distance-based and RKHS-based dependence metrics in high dimension</em>.
           The Annals of Statistics 48 (6), 3366-3394,
           2020.
-          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-48/issue-6/Distance-based-and-RKHS-based-dependence-metrics-in-high-dimension/10.1214/19-AOS1934.short">link</a> <a class="tag" href="/downloads/distance-2019.pdf">file</a>
+          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-48/issue-6/Distance-based-and-RKHS-based-dependence-metrics-in-high-dimension/10.1214/19-AOS1934.short">link</a>
           </p>
         </div>
       </div>
@@ -344,7 +344,7 @@ permalink: /research
           <em>Empirical bayes, sure and sparse normal mean models</em>.
           arXiv,
           2017.
-          <a class="tag" href="https://arxiv.org/abs/1702.05195">link</a> <a class="tag" href="/downloads/EB-2019.pdf">latest version</a>
+          <a class="tag" href="/downloads/EB-2019.pdf">link</a>
           </p>
         </div>
       </div>
@@ -409,7 +409,7 @@ permalink: /research
           <em>Testing high dimensional mean under sparsity</em>.
           arXiv,
           2015.
-          <a class="tag" href="https://arxiv.org/abs/1509.08444">link</a> <a class="tag" href="/downloads/LR-HD2017.pdf">file</a>
+          <a class="tag" href="/downloads/LR-HD2017.pdf">link</a>
           </p>
         </div>
       </div>
