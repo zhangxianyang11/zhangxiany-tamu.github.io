@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: ""
 url: ""
 
-google_analytics: UA-XXXXXXXXX-X
+google_analytics: UA-34779364-1
 
 include:
   - .htaccess
