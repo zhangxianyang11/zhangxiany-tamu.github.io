@@ -80,7 +80,8 @@ permalink: /teaching
                 <tr><th>Thu, Mar 3</th><td><a href="/downloads/620sp22/Mar-3.pdf">Lecture 13</a></td><td>Hajek projection</td></tr>
                 <tr><th>Tue, Mar 8</th><td><a href="/downloads/620sp22/Mar-8.pdf">Lecture 14</a></td><td>metric entropy, bracketing, uniform laws of large numbers</td></tr>
                 <tr><th>Thu, Mar 10</th><td><a href="/downloads/620sp22/Mar-10.pdf">Lecture 15</a></td><td>Sub-Gaussianity, Hoeffding's inequality</td></tr>
-                <tr class="is-selected"><th>Tue, Mar 15</th><td><a href="/downloads/620sp22/Mar-15.pdf">Lecture 16</a></td><td>Symmetrization</td></tr>
+                <tr><th>Thu, Mar 22</th><td><a href="/downloads/620sp22/Mar-22.pdf">Lecture 16</a></td><td>Symmetrization</td></tr>               
+                <tr class="is-selected"><th>Tue, Mar 24</th><td><a href="/downloads/620sp22/Mar-24.pdf">Lecture 17</a></td><td>McDiarmid’s inequality</td></tr>
               </tbody>
             </table>
           </p>
