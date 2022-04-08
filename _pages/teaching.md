@@ -86,6 +86,8 @@ permalink: /teaching
                 <tr><th>Thu, Mar 31</th><td><a href="/downloads/620sp22/Mar-24.pdf">Lecture 19</a></td><td>Lipschitz functions, VC dimension</td></tr>
                <tr><th>Tue, Apr 5</th><td><a href="/downloads/620sp22/Apr-5.pdf">Lecture 20</a></td><td>VC dimension</td></tr>
                <tr><th>Thu, Apr 7</th><td><a href="/downloads/620sp22/Apr-7.pdf">Lecture 21</a></td><td>Convergence rate, Some concepts of convergence in distribution</td></tr> 
+               <tr><th>Tue, Apr 12</th><td><a href="/downloads/620sp22/Apr-12.pdf">Lecture 22</a></td><td>Asymptotically equicontinuous</td></tr>
+               <tr><th>Thu, Apr 14</th><td><a href="/downloads/620sp22/Apr-14.pdf">Lecture 23</a></td><td>Donsker Class, Goodness of fit statistics</td></tr> 
               </tbody>
             </table>
           </p>
