@@ -140,6 +140,19 @@ permalink: /research
         </div>
       </div>
     </article>
+        <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <p>
+          H Zhou, <b>X Zhang</b>, J Chen.
+          <em>Covariate Adaptive Family-wise Error Rate Control for Genome-Wide Association Studies</em>.
+          Biometrika, 108, 915–931,
+          2021.
+          <a class="tag" href="https://doi.org/10.1093/biomet/asaa098">link</a> <a class="tag" href="https://github.com/jchen1981/CAMT/">R: CAMT</a>
+          </p>
+        </div>
+      </div>
+    </article>
     <article class="media">
       <div class="media-content">
         <div class="content">
@@ -201,19 +214,6 @@ permalink: /research
           The Annals of Statistics 48 (6), 3366-3394,
           2020.
           <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-48/issue-6/Distance-based-and-RKHS-based-dependence-metrics-in-high-dimension/10.1214/19-AOS1934.short">link</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
-          H Zhou, <b>X Zhang</b>, J Chen.
-          <em>Covariate Adaptive Family-wise Error Rate Control for Genome-Wide Association Studies</em>.
-          Biometrika, 108, 915–931,
-          2020.
-          <a class="tag" href="https://doi.org/10.1093/biomet/asaa098">link</a> <a class="tag" href="https://github.com/jchen1981/CAMT/">R: CAMT</a>
           </p>
         </div>
       </div>
