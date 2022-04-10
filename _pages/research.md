@@ -50,13 +50,26 @@ permalink: /research
         </div>
       </div>
     </article>
+        <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <p>
+          H Cao, J Chen, <b>X Zhang</b>.
+          <em>Optimal false discovery rate control for large scale multiple testing with auxiliary information</em>.
+          Annals of Statistics, 50 (2), 807–857,
+          2022.
+          <a class="tag" href="https://arxiv.org/abs/2103.15311">link</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
+          </p>
+        </div>
+      </div>
+    </article>
      <article class="media">
       <div class="media-content">
         <div class="content">
           <p>
           <b>X Zhang</b>, J Chen.
           <em>Covariate adaptive false discovery rate control with applications to omics-wide multiple testing</em>.
-          Journal of the American Statistical Association,
+          Journal of the American Statistical Association, 117, 411-427, 
           2022.
           <a class="tag" href="https://doi.org/10.1080/01621459.2020.1783273">link</a> <a class="tag" href="https://github.com/jchen1981/CAMT">R: CAMT</a>
           </p>
@@ -69,8 +82,7 @@ permalink: /research
           <p>
           S Yun, <b>X Zhang</b>, B Li.
           <em>Detection of local differences in spatial characteristics between two spatiotemporal random fields</em>.
-          Journal of the American Statistical Association,
-          2022.
+          Journal of the American Statistical Association, 117, 291-306, 2022.
           <a class="tag" href="https://doi.org/10.1080/01621459.2020.1775613">link</a>
           </p>
         </div>
@@ -137,19 +149,6 @@ permalink: /research
           arXiv,
           2021.
           <a class="tag" href="https://arxiv.org/abs/2105.08976">link</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
-          H Cao, J Chen, <b>X Zhang</b>.
-          <em>Optimal false discovery rate control for large scale multiple testing with auxiliary information</em>.
-          Annals of Statistics,
-          2021.
-          <a class="tag" href="https://arxiv.org/abs/2103.15311">link</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
           </p>
         </div>
       </div>
