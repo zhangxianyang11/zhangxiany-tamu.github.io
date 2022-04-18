@@ -88,6 +88,8 @@ permalink: /teaching
                <tr><th>Thu, Apr 7</th><td><a href="/downloads/620sp22/Apr-7.pdf">Lecture 21</a></td><td>Convergence rate, Some concepts of convergence in distribution</td></tr> 
                <tr><th>Tue, Apr 12</th><td><a href="/downloads/620sp22/Apr-12.pdf">Lecture 22</a></td><td>Asymptotically equicontinuous</td></tr>
                <tr><th>Thu, Apr 14</th><td><a href="/downloads/620sp22/Apr-14.pdf">Lecture 23</a></td><td>Donsker Class, Goodness of fit statistics</td></tr> 
+               <tr><th>Tue, Apr 19</th><td><a href="/downloads/620sp22/Apr-19.pdf">Lecture 22</a></td><td>Functional delta method</td></tr>
+               <tr><th>Thu, Apr 21</th><td><a href="/downloads/620sp22/Apr-21.pdf">Lecture 23</a></td><td>Bootstrap, Gaussian sequence model</td></tr> 
               </tbody>
             </table>
           </p>
