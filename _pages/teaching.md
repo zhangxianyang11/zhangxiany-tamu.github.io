@@ -90,8 +90,8 @@ permalink: /teaching
                <tr><th>Thu, Apr 14</th><td><a href="/downloads/620sp22/Apr-14.pdf">Lecture 23</a></td><td>Donsker Class, Goodness of fit statistics</td></tr> 
                <tr><th>Tue, Apr 19</th><td><a href="/downloads/620sp22/Apr-19.pdf">Lecture 24</a></td><td>Functional delta method</td></tr>
                <tr><th>Thu, Apr 21</th><td><a href="/downloads/620sp22/Apr-21.pdf">Lecture 25</a></td><td>Bootstrap, Gaussian sequence model</td></tr> 
-               <tr><th>Tue, Apr 26</th><td><a href="/downloads/620sp22/Apr-19.pdf">Lecture 26</a></td><td>soft/hard-thresholding estimators, risk inflation</td></tr>
-               <tr><th>Thu, Apr 28</th><td><a href="/downloads/620sp22/Apr-21.pdf">Lecture 27</a></td><td>Lasso consistency</td></tr>
+               <tr><th>Tue, Apr 26</th><td><a href="/downloads/620sp22/Apr-26.pdf">Lecture 26</a></td><td>Soft/hard-thresholding estimators, risk inflation</td></tr>
+               <tr><th>Thu, Apr 28</th><td><a href="/downloads/620sp22/Apr-28.pdf">Lecture 27</a></td><td>Lasso consistency</td></tr>
               </tbody>
             </table>
           </p>
