@@ -82,8 +82,8 @@ permalink: /teaching
                 <tr><th>Thu, Mar 10</th><td><a href="/downloads/620sp22/Mar-10.pdf">Lecture 15</a></td><td>Sub-Gaussianity, Hoeffding's inequality</td></tr>
                 <tr><th>Tue, Mar 22</th><td><a href="/downloads/620sp22/Mar-22.pdf">Lecture 16</a></td><td>Symmetrization</td></tr>               
                 <tr><th>Thu, Mar 24</th><td><a href="/downloads/620sp22/Mar-24.pdf">Lecture 17</a></td><td>McDiarmid’s inequality</td></tr>
-                <tr><th>Tue, Mar 29</th><td><a href="/downloads/620sp22/Mar-22.pdf">Lecture 18</a></td><td>Sub-Gaussian process, Dudley’s integral entropy</td></tr> 
-                <tr><th>Thu, Mar 31</th><td><a href="/downloads/620sp22/Mar-24.pdf">Lecture 19</a></td><td>Lipschitz functions, VC dimension</td></tr>
+                <tr><th>Tue, Mar 29</th><td><a href="/downloads/620sp22/Mar-29.pdf">Lecture 18</a></td><td>Sub-Gaussian process, Dudley’s integral entropy</td></tr> 
+                <tr><th>Thu, Mar 31</th><td><a href="/downloads/620sp22/Mar-31.pdf">Lecture 19</a></td><td>Lipschitz functions, VC dimension</td></tr>
                <tr><th>Tue, Apr 5</th><td><a href="/downloads/620sp22/Apr-5.pdf">Lecture 20</a></td><td>VC dimension</td></tr>
                <tr><th>Thu, Apr 7</th><td><a href="/downloads/620sp22/Apr-7.pdf">Lecture 21</a></td><td>Convergence rate, Some concepts of convergence in distribution</td></tr> 
                <tr><th>Tue, Apr 12</th><td><a href="/downloads/620sp22/Apr-12.pdf">Lecture 22</a></td><td>Asymptotically equicontinuous</td></tr>
