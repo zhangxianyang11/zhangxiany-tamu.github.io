@@ -247,19 +247,6 @@ permalink: /research
       <div class="media-content">
         <div class="content">
           <p>
-          S Kim, HR Cho, <b>X Zhang</b>.
-          <em>Initial severity‐dependent longitudinal model with application to a randomized controlled trial of women with depression</em>.
-          Statistics in medicine 38 (9), 1678-1689,
-          2019.
-          <a class="tag" href="https://doi.org/10.1002/sim.8072">link</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
           S Chakraborty, <b>X Zhang</b>.
           <em>Distance metrics for measuring joint dependence with application to causal inference</em>.
           Journal of the American Statistical Association,
@@ -377,19 +364,6 @@ permalink: /research
       <div class="media-content">
         <div class="content">
           <p>
-          B Li, <b>X Zhang</b>, JE Smerdon.
-          <em>Comparison between spatio‐temporal random processes and application to climate model data</em>.
-          Environmetrics 27 (5), 267-279,
-          2016.
-          <a class="tag" href="https://doi.org/10.1002/env.2395">link</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
           <b>X Zhang</b>.
           <em>Fixed-smoothing asymptotics in the generalized empirical likelihood estimation framework</em>.
           Journal of Econometrics 193 (1), 123-146,
@@ -473,19 +447,6 @@ permalink: /research
           Scandinavian Journal of Statistics 41 (2), 311-324,
           2014.
           <a class="tag" href="https://doi.org/10.1111/sjos.12028">link</a>
-          </p>
-        </div>
-      </div>
-    </article>
-    <article class="media">
-      <div class="media-content">
-        <div class="content">
-          <p>
-          <b>X Zhang</b>, X Shao.
-          <em>On a general class of long run variance estimators</em>.
-          Economics Letters 120 (3), 437-441,
-          2013.
-          <a class="tag" href="https://doi.org/10.1016/j.econlet.2013.05.026">link</a>
           </p>
         </div>
       </div>
