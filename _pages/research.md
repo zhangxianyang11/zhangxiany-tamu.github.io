@@ -57,7 +57,7 @@ permalink: /research
           <em>Optimal false discovery rate control for large scale multiple testing with auxiliary information</em>.
           Annals of Statistics, 50 (2), 807–857,
           2022.
-          <a class="tag" href="https://arxiv.org/abs/2103.15311">link</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
+          <a class="tag" href="https://projecteuclid.org/journals/annals-of-statistics/volume-50/issue-2/Optimal-false-discovery-rate-control-for-large-scale-multiple-testing/10.1214/21-AOS2128.short">link</a> <a class="tag" href="https://github.com/jchen1981/OrderShapeEM">R: OrderShapeEM</a>
           </p>
         </div>
       </div>
