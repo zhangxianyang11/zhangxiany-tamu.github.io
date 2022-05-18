@@ -30,7 +30,6 @@ permalink: /
         <p>
           I am an Associate Professor in the Statistics Department at Texas A&M. I got my Ph.D. in Statistics from <a href="http://illinois.edu/">the University of Illinois at Urbana-Champaign</a> and my BS in statistics from <a href="http://en.ustc.edu.cn/">the University of Science & Technology of China</a>.
         </p>
-        <p><b>Postdoctral position available. See more details <a href="/opening">here</a>.</b></p>
       </div>
     </div>
   </div>
