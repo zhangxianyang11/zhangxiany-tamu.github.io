@@ -24,14 +24,26 @@ permalink: /research
         </div>
       </div>
     </article>
+     <article class="media">
+      <div class="media-content">
+        <div class="content">
+          <p>
+          A Roy, J Chen, <b>X Zhang</b>
+          <em>A General Framework for Powerful Confounder Adjustment in Omics Association Studies</em>.
+          arXiv,
+          2022.
+          <a class="tag" href="https://arxiv.org/abs/2204.01161">link</a>
+          </p>
+        </div>
+      </div>
+    </article>
     <article class="media">
       <div class="media-content">
         <div class="content">
           <p>
           <b>X Zhang</b>, H Zhou, H Ye.
           <em>A Modern Theory for High-dimensional Cox Regression Models</em>.
-          arXiv,
-          2022.
+          , 2022.
           <a class="tag" href="https://arxiv.org/abs/2204.01161">link</a>
           </p>
         </div>
